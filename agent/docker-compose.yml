@@ -1,6 +1,6 @@
 services:
   jenkins-agent:
-    image: thorpejosh/ssh-agent-docker:latest
+    image: fm39hz/docker-in-jenkins:agent-latest
     container_name: jenkins-agent
     volumes:
       - /home/${USER}/${PROJECT}:/home/jenkins/agent/${PROJECT}
